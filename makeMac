@@ -1,0 +1,20 @@
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c matrix.cpp       -o matrix.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c compassSensor.cpp       -o compassSensor.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c lightSensor.cpp       -o lightSensor.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c propSensor.cpp       -o propSensor.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c touchSensor.cpp       -o touchSensor.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c object.cpp       -o object.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c joint.cpp       -o joint.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c neuralNetwork.cpp       -o neuralNetwork.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c robot.cpp       -o robot.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c environment.cpp       -o environment.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c optimizer.cpp       -o optimizer.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c userModel.cpp       -o userModel.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c BackProp.cpp       -o BackProp.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c tauOptimizer.cpp       -o tauOptimizer.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c tau.cpp       -o tau.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c envs.cpp       -o envs.o
+g++ -DdTRIMESH_ENABLED -DdDOUBLE -I "$HOME/Downloads/ode-0.12/include" -c M3.cpp       -o M3.o
+
+g++ -g -O2 -o M3 matrix.o compassSensor.o lightSensor.o propSensor.o touchSensor.o object.o joint.o neuralNetwork.o robot.o environment.o optimizer.o userModel.o BackProp.o tauOptimizer.o tau.o envs.o M3.o -Wl,-bind_at_load $HOME/Downloads/ode-0.12/drawstuff/src/.libs/libdrawstuff.a $HOME/Downloads/ode-0.12/ode/src/.libs/libode.a -framework OpenGL -framework GLUT -lm -lpthread
+

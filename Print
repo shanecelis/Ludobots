@@ -1,0 +1,11 @@
+tau.cpp:	preferences->Set(firstControllerIndex,secondControllerIndex,+1.0);
+tau.cpp:	preferences->Set(secondControllerIndex,firstControllerIndex,-1.0);
+tau.cpp:        preferences->Set(secondControllerIndex,firstControllerIndex,+1.0);
+tau.cpp:        preferences->Set(firstControllerIndex,secondControllerIndex,-1.0);
+tau.cpp:	if ( preferences->ValFoundOffTheDiagonal(0.0) )
+tau.cpp:                preferences->ValFoundOffTheDiagonal(&firstControllerIndex,&secondControllerIndex,0.0);
+tau.cpp:	preferences->AddColumn(0);
+tau.cpp:	preferences->AddRow(0);
+tau.cpp:	preferences->Print();
+tau.cpp:	return( preferences->ValuesDifferentFrom(0) >= 2 );
+tau.cpp:			double score = preferences->SumOfRow(i);

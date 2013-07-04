@@ -1,0 +1,7 @@
+tau.cpp:	tauOptimizer->Optimize( Controllers_Available_For_Optimization() , controllers );
+tau.cpp:	return( tauOptimizer->Ready_To_Predict() );
+tau.cpp:		tauOptimizer->Save(outFile);
+tau.cpp:	return( tauOptimizer->Score_Predict(controller) );
+tau.cpp:		tauOptimizer->User_Models_Reset(Controllers_Available_For_Optimization() ,controllers);
+tau.cpp:	                                	double score1 = tauOptimizer->Score_Predict1( optimizer->Genome_Get(i) );
+tau.cpp:                                		double score2 = tauOptimizer->Score_Predict2( optimizer->Genome_Get(i) );

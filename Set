@@ -1,0 +1,20 @@
+neuralNetwork.cpp:		sensorTimeSeries->Print(6);
+neuralNetwork.cpp:                sensorTimeSeries->Write(outFile);
+neuralNetwork.cpp:		int dataRecordedUntilForCurrentDataSet = sensorTimeSeries->FirstRowWithSum(0.0);
+neuralNetwork.cpp:		sensorTimeSeries->Set(timeStep,j,sensorValue);
+userModel.cpp:	        while ( (sensorRow < sensorTimeSeries->length) &&
+userModel.cpp:			(!sensorTimeSeries->Row_AllZeros(sensorRow)) ) {
+userModel.cpp:		in[0] = sensorTimeSeries->Get(sensorRow,0);
+userModel.cpp:		in[1] = sensorTimeSeries->Get(sensorRow,2);
+userModel.cpp:		in[2] = sensorTimeSeries->Get(sensorRow,4);
+userModel.cpp:                in[3] = sensorTimeSeries->Get(sensorRow,6);
+userModel.cpp:                in[4] = sensorTimeSeries->Get(sensorRow,8);
+userModel.cpp://			in[j] = sensorTimeSeries->Get(sensorRow,j);
+userModel.cpp:        while ( (i<sensorTimeSeries->length) && (!sensorTimeSeries->Row_AllZeros(i)) ) {
+userModel.cpp:	in[0] = sensorTimeSeries->Get(i,0);
+userModel.cpp:	in[1] = sensorTimeSeries->Get(i,2);
+userModel.cpp:	in[2] = sensorTimeSeries->Get(i,4);
+userModel.cpp:        in[3] = sensorTimeSeries->Get(i,6);
+userModel.cpp:        in[4] = sensorTimeSeries->Get(i,8);
+userModel.cpp://		in[j] = sensorTimeSeries->Get(i,j);
+userModel.cpp://	return( sensorTimeSeries->Get(sensorTimeSeries->length-1,0) );

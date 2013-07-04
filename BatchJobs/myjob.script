@@ -1,0 +1,6 @@
+#PBS -l nodes=1:ppn=1 
+#PBS -l walltime=10:00:00
+#PBS -N myjob
+#PBS -j oe
+cd $HOME/tauAllSensorData1 
+./M3 -null -r 300 -a 2 
