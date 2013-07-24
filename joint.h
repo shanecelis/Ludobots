@@ -25,7 +25,7 @@ public:
 	double		x,y,z;
 
 private:
-	double		pos[3];
+	dReal		pos[3];
 	dReal		R[12];
 	dJointID 	joint;
 	int		physicalized;

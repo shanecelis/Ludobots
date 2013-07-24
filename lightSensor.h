@@ -12,7 +12,7 @@ class LIGHT_SENSOR {
 
 public:
 	class OBJECT *containerObject;
-	double pos[3];
+	dReal pos[3];
 	dReal R[12];
 	double sides[3];
 	double value;

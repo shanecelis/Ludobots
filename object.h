@@ -36,9 +36,9 @@ public:
 	dBodyID body;
 
 private:
-	double pos[3];
+	dReal pos[3];
 	dReal R[12];
-	double sides[3];
+	dReal sides[3];
 	int hidden;
 	int state;
 	dMass m;
